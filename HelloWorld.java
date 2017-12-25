@@ -2,7 +2,10 @@ package helloworld;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        String greeting = "Hello world!";
+        int stringLength = greeting.length();
+        System.out.println(greeting);
+        System.out.println(stringLength);
     }
-    
+
 }
