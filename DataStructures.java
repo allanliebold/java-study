@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Game {
+public class DataStructures {
 
   public static void main(String[] args) {
     ArrayList<String> arcadeGames = new ArrayList<String>();
