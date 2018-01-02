@@ -4,7 +4,7 @@ class MyClass {
     public String message = "Hello World";
 
     public void displayMessage() {
-        System.out.println("Message = " + messge);
+        System.out.println("Message = " + message);
     }
 
     public static String greetings = "Good morning";
