@@ -1,7 +1,7 @@
 package inheritencedemo;
 import java.util.Scanner;
 
-public class Member {
+abstract public class Member {
     public String welcome = "Welcome to Java Fitness!";
     protected double annualFee;
     private String name;
@@ -47,7 +47,5 @@ public class Member {
         System.out.println("Annual Fee: " + annualFee);
     }
 
-    public void calculateAnnualFee() {
-        annualFee = 0;
-    }
+    abstract public void calculateAnnualFee();
 }
