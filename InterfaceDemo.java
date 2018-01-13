@@ -8,6 +8,9 @@ public class InterfaceDemo {
         a.someMethod();
 
         System.out.println("The value of the constant is " + MyInterface.myInt);
+
+        a.someDefaultMethod();
+        MyInterface.someStaticMethod();
     }
 }
 
@@ -18,8 +21,15 @@ public class InterfaceDemo {
         }
     }
 
-    interface MyInterface{
+    interface MyInterface {
         int myInt = 5;
         void someMethod();
+
+        public static void someStaticMethod() {
+            System.out.println("This is a static method in an interface.");
+        }
+
+        public default void someDefaultMethod() {
+            System.out.println("This is a default method in an interface.");
     }
 }
